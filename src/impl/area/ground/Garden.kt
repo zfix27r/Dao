@@ -3,10 +3,9 @@ package impl.area.ground
 import game.base.area.AreaModel
 import game.base.area.ground.AreaGroundSoil
 import game.base.energy.Energy
-import game.contract.DevContract
 import game.contract.EnergyEmitter
 import game.contract.EnergyReceiver
-import game.key.AreaKey
+import game.base.area.AreaKey
 import impl.energy.EnergyController
 
 class Garden(

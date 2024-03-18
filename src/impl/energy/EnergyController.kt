@@ -1,7 +1,7 @@
 package impl.energy
 
 import game.base.energy.Energy
-import game.key.EnergyKey
+import game.base.energy.EnergyKey
 
 class EnergyController {
     private val energies: MutableMap<EnergyKey, Energy> = mutableMapOf()

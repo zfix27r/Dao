@@ -1,4 +1,4 @@
-package game.key
+package game.base.area
 
 enum class AreaKey {
     GARDEN

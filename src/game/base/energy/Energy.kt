@@ -1,7 +1,5 @@
 package game.base.energy
 
-import game.key.EnergyKey
-
 abstract class Energy  {
     abstract val key: EnergyKey
     abstract val model: EnergyModel

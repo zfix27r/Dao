@@ -1,5 +1,0 @@
-package space
-
-class SpaceArea {
-
-}

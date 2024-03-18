@@ -1,4 +1,0 @@
-package creature
-
-interface CoreProperty {
-}

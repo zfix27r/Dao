@@ -1,7 +1,6 @@
 package game.base.area
 
 import game.base.Space
-import game.key.AreaKey
 
 abstract class Area : Space() {
     abstract val model: AreaModel

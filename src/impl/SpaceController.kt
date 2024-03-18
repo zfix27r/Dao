@@ -2,7 +2,7 @@ package impl
 
 import game.base.Space
 import game.base.area.Area
-import game.key.AreaKey
+import game.base.area.AreaKey
 
 class SpaceController : Space() {
     private val areas: MutableMap<AreaKey, Area> = mutableMapOf()

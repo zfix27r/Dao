@@ -1,4 +1,4 @@
-package game.key
+package game.base.energy
 
 enum class EnergyKey {
     QI,

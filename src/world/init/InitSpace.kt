@@ -3,14 +3,14 @@ package world.init
 import game.base.area.AreaModel
 import game.base.energy.EnergyModel
 import game.identity.IdentityModel
-import game.key.AreaKey
-import game.key.EnergyKey
+import game.base.area.AreaKey
+import game.base.energy.EnergyKey
 import impl.SpaceController
 import impl.area.ground.Garden
 import impl.energy.EnergyController
 import impl.energy.EnergyQi
 
-object initSpace {
+object InitSpace {
     fun controller(): SpaceController {
         val controller = SpaceController()
         controller.addArea(garden())
@@ -18,7 +18,7 @@ object initSpace {
         return controller
     }
 
-    fun garden(): Garden {
+    private fun garden(): Garden {
         val identity = IdentityModel(
             title = "Сад"
         )

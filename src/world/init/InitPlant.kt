@@ -7,7 +7,7 @@ import game.base.energy.EnergyModel
 import game.base.plant.PlantModel
 import game.evolution.EvolutionModel
 import game.identity.IdentityModel
-import game.key.EnergyKey
+import game.base.energy.EnergyKey
 import impl.energy.EnergyController
 import impl.energy.EnergyLife
 import impl.energy.EnergyQi

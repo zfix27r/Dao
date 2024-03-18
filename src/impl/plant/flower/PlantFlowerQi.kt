@@ -4,7 +4,7 @@ import game.base.energy.Energy
 import game.base.plant.BasePlant
 import game.base.plant.PlantModel
 import game.contract.EnergyEmitter
-import game.key.EnergyKey
+import game.base.energy.EnergyKey
 import impl.energy.EnergyController
 
 class PlantFlowerQi(

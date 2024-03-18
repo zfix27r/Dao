@@ -1,11 +1,11 @@
 import game.base.area.ground.AreaGroundSoil
 import game.core.System
 import game.core.User
-import game.key.AreaKey
-import world.init.initSpace
+import game.base.area.AreaKey
+import world.init.InitSpace
 
 fun main() {
-    val spaceController = initSpace.controller()
+    val spaceController = InitSpace.controller()
 
     System.loop {
         if (System.counter == 1) {

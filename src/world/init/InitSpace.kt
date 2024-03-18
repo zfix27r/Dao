@@ -1,10 +1,10 @@
 package world.init
 
+import game.base.area.AreaKey
 import game.base.area.AreaModel
+import game.base.energy.EnergyKey
 import game.base.energy.EnergyModel
 import game.identity.IdentityModel
-import game.base.area.AreaKey
-import game.base.energy.EnergyKey
 import impl.SpaceController
 import impl.area.ground.Garden
 import impl.energy.EnergyController

@@ -1,11 +1,11 @@
 package impl.area.ground
 
+import game.base.area.AreaKey
 import game.base.area.AreaModel
 import game.base.area.ground.AreaGroundSoil
 import game.base.energy.Energy
 import game.contract.EnergyEmitter
 import game.contract.EnergyReceiver
-import game.base.area.AreaKey
 import impl.energy.EnergyController
 
 class Garden(
@@ -20,8 +20,6 @@ class Garden(
             if (it is EnergyEmitter) {
                 //it.emitEnergy(it.energyController.)
             }
-
-            it.showProgress(model)
         }
     }
 
@@ -31,7 +29,14 @@ class Garden(
         }
     }
 
-    override fun toString() : String {
-        return "${model.identity.title} [$energyController]"
+    override fun toString(): String {
+        val sb = StringBuilder()
+        sb.append("${model.identity.title} [$energyController]")
+
+        plants.forEach {
+            sb.append(it)
+        }
+
+        return sb.toString()
     }
 }

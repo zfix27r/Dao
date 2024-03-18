@@ -3,6 +3,7 @@ package impl
 import game.base.Space
 import game.base.area.Area
 import game.base.area.AreaKey
+import impl.area.ground.Garden
 
 class SpaceController : Space() {
     private val areas: MutableMap<AreaKey, Area> = mutableMapOf()
@@ -10,6 +11,7 @@ class SpaceController : Space() {
     override fun tick() {
         areas.values.forEach {
             it.tick()
+            println(it)
         }
     }
 
@@ -23,6 +25,7 @@ class SpaceController : Space() {
 
     private fun findKey(area: Area) =
         when (area) {
+            is Garden -> AreaKey.GARDEN
             else -> null
         }
 }
